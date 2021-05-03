@@ -8,6 +8,7 @@ public class Main {
         return a+b;
     }
 
+
     public static void main(String[] args) {
         //first program
        System.out.println("hello World");
@@ -50,8 +51,7 @@ Types of operator
          2) Assignment operator
          3) Logical operator
          4) comparison operator
-
-         */
+*/
 
         int num1 = 45, num2 = 56;
         num1 +=3;
@@ -227,7 +227,7 @@ Types of operator
         for(String value: cars) {
             System.out.println(value);
         }
-        
+
    //Try - Catch in Java
 
         String [] cars = {"Maruti", "Innova", "BMW", "audi", "Fortuner"};
@@ -241,7 +241,51 @@ Types of operator
 
         // calling sum method
 
-        System.out.println(sum(a:6 , b:7));
+       //  System.out.println(sum(a:6 , b:7));
+
+    // Java Project Calculator
+
+        float number_1, number_2;
+        System.out.println("enter first number");
+        Scanner scan = new Scanner(System.in);
+        number_1 = scan.nextFloat();
+        System.out.println("enter second number");
+        Scanner scan2 = new Scanner(System.in);
+        number_2 = scan.nextFloat();
+        System.out.println(number_1);
+        System.out.println(number_2);
+
+        String prompt = "Enter 0 for Addition, 1 for Subtraction, 2 for Multiplication, 3 for Division";
+        System.out.println(prompt);
+        int input1 = scan.nextInt();
+        switch (input1){
+            case 0:
+                System.out.println("Add these numbers");
+                System.out.println("the result is :");
+                System.out.println(number_1 + number_2);
+                break;
+
+            case 1:
+                System.out.println("Subtract these numbers");
+                System.out.println("the result is :");
+                System.out.println(number_1 - number_2);
+                break;
+
+            case 2:
+                System.out.println("Multiply these numbers");
+                System.out.println("the result is :");
+                System.out.println(number_1 * number_2);
+                break;
+
+            case 3:
+                System.out.println("Divide these numbers");
+                System.out.println("the result is :");
+                System.out.println(number_1 / number_2);
+                break;
+            default:
+                System.out.println("Invalid input");
+        }
+
 
 
 
