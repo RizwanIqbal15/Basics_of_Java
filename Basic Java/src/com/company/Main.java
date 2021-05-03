@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         //first program
-        System.out.println("hello World");
+       System.out.println("hello World");
         System.out.println("My first java program");
         //Variables
         // syntax of declaring variables, int, char, float, boolean, string
@@ -71,6 +71,7 @@ Types of operator
          1) && , || , ! ---
          */
         //Taking user input in java (string)
+
         Scanner Scan = new Scanner(System.in);
         System.out.println("enter data");
         String input = Scan.nextLine();
@@ -93,6 +94,114 @@ Types of operator
         System.out.println(name.charAt(2));
         System.out.println(name.endsWith("an"));
         System.out.println(name.indexOf("ma"));
+
+
+// Math class in Java
+
+        int num9 = 4, num10 = 7;
+        System.out.println(Math.max(num9,num10));
+        System.out.println(Math.min(num9,num10));
+        System.out.println(Math.sqrt(36));
+        System.out.println(Math.abs(-36));
+        System.out.println(Math.random());
+        System.out.println(4+(8-4)*Math.random());
+        System.out.println(6+(10-6)*Math.random());
+
+        // If - Else Condition statement in java
+
+        Scanner Scan1 = new Scanner(System.in);
+        System.out.println("enter the age");
+        int age = Scan1.nextInt();
+        System.out.println(age);
+
+        if (age>20) {
+            System.out.println("you are an adult");
+        }
+            else if (age>5){
+                System.out.println("you are not a kid");
+        }
+        else {
+            System.out.println("you are a kid");
+        }
+
+        switch (age){
+            case 12:
+                System.out.println("you are 12 years old");
+                break;
+            case 56:
+                System.out.println("you are 56 years old");
+                break;
+            case 16:
+                System.out.println("you are 16 years old");
+                break;
+            default:
+                System.out.println("you did not match any of the cases");
+ }
+
+
+        // Quiz Question
+        Scanner Scan = new Scanner(System.in);
+        System.out.println("enter the weekdays numbers");
+        int weekdays = Scan.nextInt();
+        System.out.println(weekdays);
+
+        switch (weekdays){
+            case 1:
+                System.out.println("Today is Sunday");
+                break;
+            case 2:
+                System.out.println("Today is Monday");
+                break;
+            case 3:
+                System.out.println("Today is Tuesday");
+                break;
+            case 4:
+                System.out.println("Today is Wednesday");
+                break;
+            case 5:
+                System.out.println("Today is Thursday");
+                break;
+            case 6:
+                System.out.println("Today is Friday");
+                break;
+            case 7:
+                System.out.println("Today is Saturday");
+                break;
+                default:
+                System.out.println("you did not match any of the cases");
+ }
+
+        // Loops statement in java
+
+       int i = 0;
+        while(i<=100){
+            System.out.println(i);
+            i +=1;
+        }
+
+
+        int j = 0;
+        do {
+            System.out.println(j);
+            j +=1;
+        }while(j<100);
+
+
+        for (int i=0;i<10;i++) {
+            System.out.println(i);
+        }
+        //Break and Continue statements
+        for (int i=0;i<10;i++) {
+            System.out.println(i);
+            break;
+        }
+
+
+
+
+
+
+
 
 
     }
