@@ -4,6 +4,9 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
+    static int sum(int a, int b){
+        return a+b;
+    }
 
     public static void main(String[] args) {
         //first program
@@ -30,7 +33,7 @@ public class Main {
 two types of data types in java
 1) primitive -- Byte(1byte), short(2bytes), int(4bytes), long(8bytes), float(4bytes), double(8bytes), boolean(1bit), char(2bytes).
 2) non-primitive --
- */
+*/
 
       byte  u = 56;
       double d = 48.6754323d;
@@ -47,7 +50,9 @@ Types of operator
          2) Assignment operator
          3) Logical operator
          4) comparison operator
+
          */
+
         int num1 = 45, num2 = 56;
         num1 +=3;
         num2 +=14;
@@ -64,6 +69,7 @@ Types of operator
         System.out.println(++num1);
         System.out.println(num1--);
         System.out.println(--num1);
+
         /*comparison operators
           1) == , != , < , > , <= , >=  --
          */
@@ -140,9 +146,9 @@ Types of operator
 
 
         // Quiz Question
-        Scanner Scan = new Scanner(System.in);
+        Scanner Scan2 = new Scanner(System.in);
         System.out.println("enter the weekdays numbers");
-        int weekdays = Scan.nextInt();
+        int weekdays = Scan2.nextInt();
         System.out.println(weekdays);
 
         switch (weekdays){
@@ -187,8 +193,8 @@ Types of operator
         }while(j<100);
 
 
-        for (int i=0;i<10;i++) {
-            System.out.println(i);
+        for (int z=0;z<10;z++) {
+            System.out.println(z);
         }
         //Break and Continue statements
         for (int i=0;i<10;i++) {
@@ -196,6 +202,46 @@ Types of operator
             break;
         }
 
+
+        // Arrays in Java
+        int [] marks = {1,2,3,5};
+        marks[2] = 34; // this will update i value
+        System.out.println(marks[0]);
+        System.out.println(marks[2]);
+        // classical way to iterate an array
+        for (int i=0;i< marks.length;i++){
+            System.out.println(marks[i]);
+        }
+        System.out.println("This is for each Loop");
+        // for each loop
+        for(int value:marks){
+            System.out.println(value);
+        }
+        //Two dimensional array
+        int [][] matrix = {{1,2,3},{4,5,6}};
+        System.out.println(matrix[1][0]);
+
+        // string array
+
+        String [] cars = {"Maruti", "Innova", "BMW", "audi", "Fortuner"};
+        for(String value: cars) {
+            System.out.println(value);
+        }
+        
+   //Try - Catch in Java
+
+        String [] cars = {"Maruti", "Innova", "BMW", "audi", "Fortuner"};
+        try {
+            System.out.println(cars[5]);
+        }
+        catch(Exception e) {
+            System.out.println(e);
+        }
+        System.out.println("masoom");
+
+        // calling sum method
+
+        System.out.println(sum(a:6 , b:7));
 
 
 
